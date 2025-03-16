@@ -1,0 +1,9 @@
+.gamelog{
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+    
+}
+.gamelog > li{
+    padding: 7px;
+}

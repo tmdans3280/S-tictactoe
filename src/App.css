@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(252, 246, 239);
+  position: relative;
+}
+
+.game-container {
+  background-color: rgb(180, 198, 198);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+ 
+  left: 50%;
+  transform: translate(-50%,0);
+}
+ol {
+  list-style: none;
+}
+
+.player-list {
+  display: flex;
+}

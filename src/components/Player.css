@@ -1,0 +1,38 @@
+.player {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border: 2px solid transparent;
+}
+.player_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 13px;
+  width: 160px;
+  height: 50px;
+  border: 2px solid #f6e35a; /* border 추가 */
+  border-radius: 7px;
+}
+
+.player span {
+  margin: 20px;
+}
+.player .edit,
+.player_active .edit {
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(180, 198, 198);
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  padding-left: 25px;
+}
