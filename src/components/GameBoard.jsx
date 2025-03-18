@@ -1,23 +1,14 @@
 import "./GameBoard.css";
 
-const initGameBoard = [
-  [null, null, null],
-  [null, null, null],
-  [null, null, null],
-];
 
-export default function GameBoard({ onHandleSelect, turns }) {
-  let gameboard = [...initGameBoard.map((item) => [...item])];
-  for (const turn of turns) {
-    const { square, player } = turn;
-    const { row, col } = square;
-    gameboard[row][col] = player;
-  }
+
+export default function GameBoard({ onHandleSelect, board }) {
+  
 
   return (
     <div>
       <ol className="gameboard">
-        {gameboard.map((row, rowIndex) => (
+        {board.map((row, rowIndex) => (
           <li key={rowIndex}>
             <ol className="row">
               {row.map((col, colIndex) => (
